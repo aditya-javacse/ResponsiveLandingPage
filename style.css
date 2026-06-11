@@ -1,0 +1,41 @@
+body{
+    margin:0;
+    font-family:Arial;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:#111;
+    color:white;
+}
+
+ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+    background:#eaf3ff;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    background:#007bff;
+    color:white;
+    border-radius:5px;
+}
