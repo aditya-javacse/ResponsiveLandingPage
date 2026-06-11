@@ -1,51 +1,146 @@
+html{
+    scroll-behavior: smooth;
+}
+html {
+    scroll-behavior: smooth;
+}
 body{
-    margin:0;
-    font-family:Arial;
+        background: red;
+    }
+    body{
+        margin:0;
+        font-family:Arial;
+    }
+
+    nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 50px;
+        background:#111;
+        color:white;
+    }
+
+    ul{
+        display:flex;
+        list-style:none;
+        gap:25px;
+    }
+li{
+    cursor:pointer;
 }
 
-nav{
+li:hover{
+    color:yellow;
+}
+
+    .hero{
+        text-align:center;
+        padding:120px 20px;
+        background:#eaf3ff;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero p{
+        font-size:20px;
+    }
+
+    button{
+        padding:12px 25px;
+        border:none;
+        background:#007bff;
+        color:white;
+        border-radius:5px;
+    }
+button:hover{
+    background:#0056b3;
+    transform:scale(1.05);
+}
+    #about,
+    #services,
+    #contact{
+        text-align:center;
+        padding:60px 20px;
+    }
+
+    #services{
+        background:#f4f4f4;
+    }
+    body{
+        margin:0;
+        font-family:Arial, sans-serif;
+    }
+
+    nav{
+        background:#007bff;
+        color:white;
+        padding:15px;
+    }
+
+    nav ul{
+        list-style:none;
+        display:flex;
+        gap:20px;
+    }
+
+    nav li{
+        cursor:pointer;
+    }
+
+    nav li:hover{
+        color:yellow;
+    }
+
+    .hero{
+        text-align:center;
+        padding:100px;
+        background:#f4f4f4;
+    }
+
+    button{
+        padding:12px 25px;
+        border:none;
+        background:#007bff;
+        color:white;
+        border-radius:5px;
+    }
+button:hover{
+    background:#0056b3;
+    transform:scale(1.05);
+}
+
+    button:hover{
+        background:#0056b3;
+    }
+}
+.service-box{
     display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 50px;
-    background:#111;
-    color:white;
+    justify-content:center;
+    gap:20px;
 }
 
-ul{
-    display:flex;
-    list-style:none;
-    gap:25px;
+.service-box div{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
 }
+@media(max-width:768px){
 
-.hero{
-    text-align:center;
-    padding:120px 20px;
-    background:#eaf3ff;
-}
+    nav{
+        flex-direction:column;
+    }
 
-.hero h1{
-    font-size:45px;
-}
+    ul{
+        flex-direction:column;
+        text-align:center;
+    }
 
-.hero p{
-    font-size:20px;
-}
-
-button{
-    padding:12px 25px;
-    border:none;
-    background:#007bff;
-    color:white;
-    border-radius:5px;
-}
-#about,
-#services,
-#contact{
-    text-align:center;
-    padding:60px 20px;
-}
-
-#services{
-    background:#f4f4f4;
+    .service-box{
+        flex-direction:column;
+        align-items:center;
+    }
 }
