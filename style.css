@@ -39,3 +39,13 @@ button{
     color:white;
     border-radius:5px;
 }
+#about,
+#services,
+#contact{
+    text-align:center;
+    padding:60px 20px;
+}
+
+#services{
+    background:#f4f4f4;
+}
